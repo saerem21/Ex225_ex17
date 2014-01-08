@@ -17,44 +17,54 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyh-8v-Jia">
-                                <rect key="frame" x="33" y="511" width="38" height="30"/>
+                                <rect key="frame" x="86" y="445" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="move">
+                                <state key="normal" title="rotate">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="move:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Zkx-6s-MUw"/>
+                                    <action selector="rotate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bzf-Dr-7p2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzE-4c-4dr">
-                                <rect key="frame" x="144" y="511" width="38" height="30"/>
+                                <rect key="frame" x="207" y="445" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="alpha">
+                                <state key="normal" title="결합">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="alpha:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CWf-ec-DqY"/>
+                                    <action selector="combination:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pVn-4p-7tw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2px-Pn-Vcg">
-                                <rect key="frame" x="245" y="511" width="41" height="30"/>
+                                <rect key="frame" x="202" y="511" width="41" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="series">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="series:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wyh-S8-NiP"/>
+                                    <action selector="series:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HQw-Od-Dil"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="i2.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="at8-qm-sdI">
-                                <rect key="frame" x="40" y="144" width="251" height="199"/>
+                                <rect key="frame" x="35" y="141" width="251" height="199"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnm-HI-6WY">
+                                <rect key="frame" x="86" y="511" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="원래대로">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setOriginal:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NcY-k7-LtY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="at8-qm-sdI" id="GDN-Tf-VPw"/>
+                        <outlet property="imageView" destination="at8-qm-sdI" id="PXb-9W-IXt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
